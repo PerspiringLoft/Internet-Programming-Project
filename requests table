@@ -1,0 +1,10 @@
+CREATE TABLE Requests (
+    CustomerID INT AUTO_INCREMENT PRIMARY KEY,
+    
+    Name VARCHAR(255) NOT NULL,
+    Phone VARCHAR(20) NOT NULL,
+    Address VARCHAR(255) NOT NULL,
+    Services VARCHAR(255) NOT NULL,
+    EstimatorPrice INT NOT NULL,
+    AdditionalNotes VARCHAR(255)
+);
