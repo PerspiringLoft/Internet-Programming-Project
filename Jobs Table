@@ -1,0 +1,16 @@
+CREATE TABLE Jobs (
+    JobID INT AUTO_INCREMENT PRIMARY KEY,
+    CustomerID INT NOT NULL,
+    Name VARCHAR(255) NOT NULL,
+    Phone VARCHAR(20) NOT NULL,
+    Address VARCHAR(255) NOT NULL,
+    AdditionalNotes VARCHAR(255),
+    EstimatorPrice INT,
+    EmployeeNotes VARCHAR(255),
+    Date DATE,
+    FinalPrice INT,
+    employeeID INT,
+    Completed BOOLEAN,
+    FOREIGN KEY (CustomerID) REFERENCES Requests(CustomerID),
+    FOREIGN KEY (employeeID) REFERENCES employees(employeeID)
+);
